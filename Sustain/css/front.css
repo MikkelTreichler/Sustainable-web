@@ -1,0 +1,171 @@
+html {
+    position: relative;
+    min-height: 100%;
+  }
+
+body {
+    background-color: #1f1f1f;
+    color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    /* Set a bottom padding to make space for the footer */
+    padding-bottom: 100px;
+}
+
+.main-header {
+    background-color: #0062CC;
+    color: #fff;
+    padding: 5px 0px 5px 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+hr {
+    border: none;
+    border-left: 1px solid black;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+}
+
+.web-image {
+    border: 2px solid #CC8100;
+    float: right;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 3%;
+}
+
+.wind-image {
+    border: 2px solid #0062CC;
+    float: right;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 3%;
+}
+
+.people-image {
+    border: 2px solid #CC8100;
+    float: right;
+    margin-top: 2%;
+    margin-right: 3%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+}
+
+.hidden {
+    display: none;
+}
+
+#text-container {
+    width: 55%;
+    display: inline-block;
+    float: left;
+    margin-left: 1%;
+    font-size: 80%;
+}
+
+#blue-text {
+    color: #0062CC;
+}
+
+#text-container2 {
+    width: 55%;
+    display: inline-block;
+    float: left;
+    margin-left: 1%;
+    font-size: 80%;
+}
+
+#text-container3 {
+    width: 55%;
+    display: inline-block;
+    float: left;
+    margin-left: 1%;
+}
+
+#text-to-toggle3 {
+    font-size: 80%;
+    width: 55%;
+    float: left;
+    margin-bottom: 15%;
+}
+
+#wind-section {
+    margin-top: 38%;
+}
+
+#people-section {
+    margin-top: 38%;
+}
+
+img {
+    width: 30%;
+    height: auto;
+}
+
+h2 {
+    font-size: 20px;
+    color: #CC8100;
+    width: 80%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    background-color: #0062CC;
+    color: #fff; /* Change the text color to your preference */
+    text-align: left;
+  }
+
+  @media screen and (min-width: 768px) {
+    p {
+        font-size: 150%;
+    }
+    #text-to-toggle3 {
+        font-size: 120%;
+        width: 40%
+    }
+
+    img {
+        width: 35%;
+        height: auto;
+    }
+
+    .web-image {
+        margin-right: 10%;
+    }
+
+    .people-image {
+        margin-right: 10%;
+    }
+
+    .wind-image {
+        margin-right: 10%;
+    }
+
+    #text-container {
+        width: 40%;
+    }
+
+    #text-container2 {
+        width: 40%;
+    }
+
+    #orange-text {
+        font-size: 180%;
+    }
+
+    #blue-text {
+        font-size: 180%;
+    }
+
+    footer {
+        height: 80px;
+    }
+  }

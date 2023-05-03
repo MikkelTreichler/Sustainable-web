@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Link til mit css -->
+    <link rel="stylesheet" href="css/front.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="dark-mode.css">
+	<meta charset="UTF-8">
+	
+	<!-- SEO -->
+	<title>Bæredygtigt Hjemmeside Design</title>
+</head>
+<body>
+	<!-- Her er min header, givet en class så den kan styles -->
+    <header class="main-header">
+        <h1>Bæredygtigt Hjemmeside Design</h1>
+    </header>
+    
+	<!-- Jeg laver her min første section, den indeholder et anchor tag, en linje og en tekstboks som er skjult -->
+    <section id="web-section">
+        <a href="#" id="toggle-text"><h2 id="orange-text">+ Hvad er en bæredygtig hjemmeside</h2></a>
+        <hr size="4" color="#CC8100">
+        <div id="text-container">
+            <p id="text-to-toggle" class="hidden"> At have en bæredygtig hjemmeside vil sige at din hjemmeside udleder så lidt CO2 som muligt, en bæredygtig hjemmeside er derfor designet og udviklet med hensyn til miljøet. Dette er fordi at hver gang man starter op en hjemmeside udleder udbyderen af webhostningen noget CO2 kan skade miljøet. CO2 udledningen fra en enkelt hjemmeside er ikke så slem, men grundet den konstant øgende mængde af hjemmesider er bæredygtige hjemmesider blevet mere og mere et talepunkt.</p>
+        </div>
+    </section>
+
+	<!-- Billede af kode -->
+    <img src="images/Web.jpg" alt="Billede af Web" class="web-image">
+    
+	<!-- Jeg henter her DOM elementer -->
+    <script>
+        const toggleTextButton = document.querySelector('#toggle-text');
+        const textToToggle = document.querySelector('#text-to-toggle');
+        const windSection = document.querySelector('#wind-section');
+
+		 // Jeg laver en event listener to til at gøre teksten synlig nå man klikker på den og rykke den næste section ned under denne section
+        toggleTextButton.addEventListener('click', function() {
+            textToToggle.classList.toggle('hidden');
+            windSection.parentNode.insertBefore(windSection, webSection.nextSibling);
+        });
+    </script>
+
+     <!-- Jeg laver en section ligesom den forrige -->
+    <section id="wind-section">
+        <a href="#" id="toggle-text2"><h2 id="blue-text">+ Måder hvorpå du kan gøre din hjemmeside bæredygtig</h2></a>
+        <hr size="4" color="#0062CC">
+        <div id="text-container2">
+            <p id="text-to-toggle2" class="hidden">Man kan lave en hjemmeside der er nem at navigere med et simpelt design for at formindske tiden folk bruger på at navigere rundt på siden. Man kan formindske brugen af for mange farver for at formindske energien der skal bruges for rendere de mange farver på en skærm. Man kan komprimere de billeder der bruges på siden for at formindske den energi der skal bruges på at rendere dem. Blandt andre ting</p>
+        </div>
+    </section>
+
+	<!-- Billede af vindmølle-->
+    <img src="images/Wind.jpg" alt="Billede af bæredygtig vindmølle" class="wind-image">
+
+    <script>
+        const toggleTextButton2 = document.querySelector('#toggle-text2');
+        const textToToggle2 = document.querySelector('#text-to-toggle2');
+        const webSection = document.querySelector('#web-section');
+
+        toggleTextButton2.addEventListener('click', function() {
+            textToToggle2.classList.toggle('hidden');
+            webSection.parentNode.insertBefore(webSection, windSection.nextSibling);
+        });
+    </script>
+
+<!-- Jeg laver en section ligesom den forrige -->
+<section id="people-section">
+    <a href="#" id="toggle-text3"><h2 id="orange-text">+ Sådan arbejder virksomheder med bæredygtighed i dag</h2></a>
+    <hr size="4" color="#CC8100">
+    <div id="text-container3">
+        <p id="text-to-toggle3" class="hidden">Jeg har desuden været i kontakt med 3 forskellige virksomheder og hørt hvordan de arbejder med bæredygtigt design i forholdet til deres hjemmesider. 
+			Hvor at jeg lærte følgende: Virksomhederne har svært ved at skabe bæredygtigt design i form af hjemmesider da det generelt er dyrere at lave et bæredygtigt design, og da det er kunderne som betaler for virksomhedens arbejdskraft er det svært at overtale kunden om at investere flere penge bare for at få en bæredygtig hjemmeside.
+			Dog forklarede virksomhederne at de prøver på at forklare kunden at det er billigere at få lavet en bæredygtig hjemmeside til at starte med, i forholdet til at skulle lave en allerede eksisterende hjemmeside bæredygtig senere hen. Virksomhederne forklarede også at på trods af ikke altid at kunne lave bæredygtige hjemmesider eller være bæredygtige under deres process, prøver de dog altid at lave bæredygtige produkter.
+			En af virksomhederne nævnte også at de var begyndt at kigge på "Regenerative design" i stedet for "Sustainable design" han forklarede at "sustainable design" ofte blev set som en måde på hvordan man kunne gøre noget dårligt mindre dårligt, hvorimod "regenerative design" forsøger på slet ikke at gøre noget dårligt, men i stedet bruge en form for "genbrugelig design metode" det er dog ikke et særligt udforsket område, men kunne blive en hel ny måde at lave bæredygtigt design.  
+		</p>
+    </div>
+</section>
+
+<img src="images/People.jpg" alt="Billede af folk der laver bæredygtige projekter" class="people-image">
+
+<script>
+    const toggleTextButton3 = document.querySelector('#toggle-text3');
+    const textToToggle3 = document.querySelector('#text-to-toggle3');
+    const peopleSection = document.querySelector('#people-section');
+    const peopleImage = document.querySelector('.people-image');
+
+    toggleTextButton3.addEventListener('click', function() {
+        textToToggle3.classList.toggle('hidden');
+        peopleImage.parentNode.insertBefore(textToToggle3, peopleSection.nextSibling);
+    });
+</script>
+
+<!-- Jeg laver en footer -->
+    <footer>
+        <p>Mail: Mikkel.treichler@gmail.com <br>
+        Tlf: 40208618</p>
+    </footer>
+</body>
+</html>
